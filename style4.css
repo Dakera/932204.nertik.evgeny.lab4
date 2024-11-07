@@ -1,0 +1,182 @@
+body {
+	margin: 0;
+	background-color: #edeef0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+p, * {
+	margin: 0;
+}
+
+p::selection {
+	background-color: #e1e5eb;
+	color: green;
+}
+
+header {
+	background-color: #507299;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px 10px;
+	z-index: 1;
+}
+
+.logo{
+    margin-left: 15%;
+}
+
+.mcontainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	max-width: 900px;
+	padding: 20px;
+	margin: 50px auto;
+}
+
+.menu {
+	margin-right: 10px;
+	width: 300px;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	color: #edeef0;
+}
+
+.menu li {
+	margin-bottom: 10px;
+}
+
+.menu a {
+	text-decoration: none;
+	color: #2e5473;
+	padding: 5px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu a:hover {
+	background-color: #e1e5eb;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 900px;
+}
+
+h3 {
+	margin: 10px 10px;
+}
+
+
+
+.post {
+	background-color: white;
+	border: 1px solid #d0d0d0;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 15px 15px;
+	width: 100%;
+	max-width: 700px;
+	box-sizing: border-box;
+}
+
+.post p {
+	text-align: justify;
+}
+
+.post img {
+	width: 100%;
+}
+
+.information_block {
+	position: sticky;
+	align-self: self-start;
+	top: 70px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 290px;
+	max-width: 150px;
+	padding: 0px 15px 15px 15px;
+	margin-left: 100px;
+}
+
+.information {
+	background-color: white;
+	border: 1px solid #d0d0d0;
+	border-radius: 10px;
+	padding: 10px 10px 20px 10px;
+}
+
+.information p {
+	margin-top: 15px;
+	background: #d0d0d0;
+}
+
+.lc {
+	display: flex;
+	color: #2e5473;
+	margin: 0;
+	justify-content: space-between;
+}
+
+hr {
+	border: 1px solid #d0d0d0;
+	margin: 5px 5px;
+	width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: white;
+	color: #808080;
+	height: 25px;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.link {
+	color: #FFFF80;
+}
+
+@media screen and (max-width: 1000px) {
+    .information_block {
+      display: none;
+    }
+  }
+  
+@media screen and (max-width: 700px) {
+	.mcontainer{
+		flex-direction: column;
+		padding: 0;
+		align-items: center;
+	}
+	
+	.menu{
+		justify-self: center;
+		margin: 0;
+		
+	}
+	
+	.content {
+		display: block;
+		max-width: 450px;
+		
+	}
+	
+	.menu li {
+		display: inline-block;
+		padding-right: 5px;
+		font-size: 14px;
+		margin-top: 10px;
+		max-width: auto;
+	}
+}
